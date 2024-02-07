@@ -15,6 +15,37 @@ public static void main(String[] args) {
 	WebElement italy = driver.findElement(By.xpath("//div[text()='Italy'][@class='dragableBoxRight']"));
 	
 	Actions act = new Actions(driver);
-	act.dragAndDrop(rome, italy);
+	act.dragAndDrop(rome, italy).perform();
+
+
+
+WebElement washington = driver.findElement(By.xpath("//div[text()='Washington'][@id='box3']"));
+WebElement us = driver.findElement(By.xpath("//div[text()='United States'][@id='box103']"));
+
+act.dragAndDrop(washington, us).perform();
+
+WebElement madrid = driver.findElement(By.xpath("//div[text()='Madrid'][@id='box7']"));
+WebElement spain = driver.findElement(By.xpath("//div[text()='Spain'][@id='box107']"));
+act.dragAndDrop(madrid, spain).perform();
+
+
+WebElement copen = driver.findElement(By.xpath("//div[text()='Copenhagen'][@id='box4']"));
+WebElement denmark = driver.findElement(By.xpath("//div[text()='Denmark'][@id='box104']"));
+act.dragAndDrop(copen, denmark).perform();
+
+WebElement oslo = driver.findElement(By.xpath("//div[text()='Oslo'][@id='box1']"));
+WebElement nor = driver.findElement(By.xpath("//div[text()='Norway'][@id='box101']"));
+
+act.dragAndDrop(oslo, nor).perform();
+
+
+
+
+
+
+
+
+
+
 }
 }
