@@ -29,6 +29,9 @@ public void clicksub() {
 public boolean checklogpresence() {
 	boolean status = driver.findElement(logos).isDisplayed();
 return status;
-}	
+}
+	public void raj(){
+		String n="f";
+	}
 	
 }
